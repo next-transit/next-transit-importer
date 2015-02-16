@@ -7,6 +7,10 @@ var config = require('./lib/util/config'),
       gtfs_base_path: __dirname + '/data/gtfs/'
     };
 
+// Usage:
+// node index.js agency:trimet type:calendar -v
+// "agency" is required
+
 process.argv.forEach(function(arg) {
   var parts = arg.split(':');
   if(parts[0] === 'agency') {
@@ -29,12 +33,14 @@ if(options.verbose) {
 }
 
 runner.start(config, options).then(function() {
-  console.log('+++++++++DONE!!!!!!!!');
   process.exit(0);
-}, function(msg, err) {
-  if(typeof msg === 'object') {
-    err = msg;
-    msg = 'An error occurred';
+}, function(err) {
+  var msg = 'An error occurred';
+  if(typeof err === 'string') {
+    msg = err;
+  } else if(err instanceof Array) {
+    msg = err[0];
+    err = err[1];
   }
   if(msg) {
     console.error(msg, err || '');
