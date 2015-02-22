@@ -7,8 +7,7 @@ var config = require('./lib/util/config'),
       gtfs_base_path: __dirname + '/data/gtfs/'
     };
 
-// Usage:
-// node index.js agency:trimet type:calendar -v
+// Usage: "node index.js agency:trimet type:calendar -v"
 // "agency" is required
 
 process.argv.forEach(function(arg) {
