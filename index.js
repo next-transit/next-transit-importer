@@ -9,6 +9,9 @@ var config = require('./lib/util/config'),
 
 // Usage: "node index.js agency:trimet type:calendar -v"
 // "agency" is required
+function usage() {
+  console.error('Usage: node index.js agency:{agency_slug} [type:{import_type} [-v]]');
+}
 
 process.argv.forEach(function(arg) {
   var parts = arg.split(':');
@@ -22,7 +25,8 @@ process.argv.forEach(function(arg) {
 });
 
 if(!options.agency) {
-  console.error('No Agency argument provided.');
+  console.error('Agency is required.');
+  usage();
   process.exit(1);
   return;
 }
