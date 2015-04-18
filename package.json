@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/reedlauber/next-transit-importer.git"
+    "url": "git://github.com/next-transit/next-transit-importer.git"
   },
   "dependencies": {
     "csv": "~0.3.6",
