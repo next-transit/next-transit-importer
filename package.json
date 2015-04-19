@@ -17,7 +17,7 @@
     "extend": "~1.1.3",
     "moment": "~2.5.1",
     "moment-timezone": "0.0.3",
-    "next-transit-models": "git://github.com/reedlauber/next-transit-models.git",
+    "next-transit-data": "git://github.com/next-transit/next-transit-data.git",
     "promise": "~3.2.0",
     "trim": "0.0.1"
   }
