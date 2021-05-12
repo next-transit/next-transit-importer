@@ -18,6 +18,6 @@
     "moment-timezone": "^0.5.23",
     "next-transit-data": "git://github.com/next-transit/next-transit-data.git",
     "promise": "^8.0.2",
-    "trim": "0.0.1"
+    "trim": "0.0.3"
   }
 }
