@@ -14,7 +14,7 @@
     "csv": "^5.1.1",
     "date-utils": "^1.2.21",
     "extend": "^3.0.2",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "moment-timezone": "^0.5.23",
     "next-transit-data": "git://github.com/next-transit/next-transit-data.git",
     "promise": "^8.0.2",
